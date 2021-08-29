@@ -1,5 +1,5 @@
-//Exercise 2.24
-//A. Perkins
+// Exercise 2.24
+// A. Perkins
 #include <stdio.h>
 
 int main()
