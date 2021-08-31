@@ -26,3 +26,4 @@ int main() {
 	printf("The overall average miles/gallon was %f\n", average_mpg);
 	return 0;
 }
+
