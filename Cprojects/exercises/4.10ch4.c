@@ -10,4 +10,5 @@ int main() {
 		printf("Celcius: %d\t", cel);
 		printf("Fahrenheit: %f\n", far);
 	}
+	return 0;
 }
