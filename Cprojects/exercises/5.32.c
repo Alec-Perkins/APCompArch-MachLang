@@ -22,8 +22,7 @@ int main() {
 			}
 		}
 		printf("Excellent! You guessed the number!\nWould you like to play again (y or n)?\n");
-		while ((getchar()) != '\n');
-		playAgain = getchar();
+		scanf("%s", &playAgain);
 	}
 	return 0;
 }
