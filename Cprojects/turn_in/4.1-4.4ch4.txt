@@ -1,0 +1,22 @@
+
+4.1
+    a)definite
+    b)indefinite
+    c)counter or control variable
+    d)continue
+    e)break
+    f)switch selection statement
+
+4.2
+    a)false: the default command is optional and not always needed
+    b)false: the break command is optional and not always needed
+    c)false: both must be true
+    d)true
+
+4.3
+    a)
+    unsigned int sum = 0;
+    for (unsigned int count = 1; count<=99; count += 2) {
+        sum += count;
+    }
+    b)

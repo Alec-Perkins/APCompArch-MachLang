@@ -1,0 +1,37 @@
+Exercise 3.28:
+The program creates a loop starting at 1 and ending at 10.
+The counter is incremented every time the loop is run.
+The loop will print "****" if the counter is not divisible by 2.
+The loop will print "++++++++" if the counter is divisible by 2. 
+The loop concludes after printing the result of counter being 10.
+The program prints:
+****
+++++++++
+****
+++++++++
+****
+++++++++
+****
+++++++++
+****
+++++++++
+
+Exercise 3.29:
+The program creates a row variable beginning at 10.
+Then a while loop is used to test if row is less than or equal to 1.
+A column variable is then created beginnnig at 1.
+Then a nested while loop is created to test if column is <= 10.
+The program will print ">" if row is divisible by 2 or "<" if it is not. 
+Then column is incremented until 10 and the row is decremented until 1.
+The program prints:
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+
