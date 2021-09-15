@@ -1,2 +1,2 @@
-cd /cygdrive/g/My\ Drive/Senior/AP\ Comp.\ Arch.\ \&\ Machine\ Lang/
+/cygdrive/g/My Drive/Senior/AP Comp. Arch. & Machine Lang/APCompArch-MachLang/Cprojects/projects
 ls -lAF
