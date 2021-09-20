@@ -4,22 +4,81 @@
 #include <stdlib.h>
 #include <time.h>
 
-// int rollDice();
-// int computerTurn();
+//Prototype Functions
+int rollDice();
+int computerTurn();
+int userTurn();
+
+//Global Variables
+int goal = 100;
 
 int main()
 {
+    int userScore, compScore = 0;
     srand(time(NULL));
-    int num = (rand() % 5) + 1;
-    printf("num: %d", num);
+    printf("Roll the dice:\n");
+    while(userScore < goal && compScore < goal)
+    {
+        userScore += userTurn();
+        compScore += computerTurn();
+    }
+    if (compScore >= goal)
+    {
+        printf("Computer won: %d", compScore);
+        return 0;
+    }
+    printf("You won!: %d", userScore);
+    return 0;
 }
 
-// int rollDice()
-// {
+int rollDice()
+{
+    int num = (rand() % 6) + 1;
+    return num;
+}
 
-// }
+int computerTurn()
+{
+    int total = 0;
+    int inc;
+    int rollAgain = 1;
+    while (rollAgain <= 3)
+    {
+        inc = rollDice();
+        if (inc == 1)
+        {
+            printf("Oops, rolled a 1. ");
+            printf("Computer gained 0 points.\n");
+            total = 0;
+            return total;
+        }
+        total += inc;
+        rollAgain = (rand() % 5) + 1;
+    }
+    printf("Computer gained %d points.\n", total);
+    return total;
+}
 
-// int computerTurn()
-// {
+int userTurn()
+{
+    int rollAgain = 1;
+    int total = 0;
+    int inc;
+    while (rollAgain == 1)
+    {
+        inc = rollDice();
+        if (inc == 1)
+        {
+            printf("Oops, rolled a 1. ");
+            printf("You gained 0 points.\n");
+            total = 0;
+            return total;
+        }
+        total += inc;
+        printf("You rolled a %d. Would you like to roll again? (1 for yes, 0 for no)\n", inc);
+        scanf("%d", &rollAgain);
+    }
+    printf("You gained %d points.\n", total);
+    return total;
 
-// }
+}
