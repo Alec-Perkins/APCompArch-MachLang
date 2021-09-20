@@ -1,0 +1,73 @@
+Roll the dice:
+You rolled a 4. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 2. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 6. Would you like to roll again? (1 for yes, 0 for no)1
+Oops, you rolled a 1. You gained 0 points.
+Computer: 0, You: 0
+Computer gained 2 points.
+Computer: 2, You: 0
+You rolled a 6. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 3. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 3. Would you like to roll again? (1 for yes, 0 for no)1
+Oops, you rolled a 1. You gained 0 points.
+Computer: 2, You: 0
+Computer gained 11 points.
+Computer: 13, You: 0
+You rolled a 3. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 4. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 5. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 4. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 2. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 2. Would you like to roll again? (1 for yes, 0 for no)1
+Oops, you rolled a 1. You gained 0 points.
+Computer: 13, You: 0
+Computer gained 12 points.
+Computer: 25, You: 0
+Oops, you rolled a 1. You gained 0 points.
+Computer: 25, You: 0
+Oops, computer rolled a 1. Computer gained 0 points.
+Computer: 25, You: 0
+You rolled a 4. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 2. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 5. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 3. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 6. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 4. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 2. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 6. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 6. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 3. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 4. Would you like to roll again? (1 for yes, 0 for no)0
+You gained 45 points.
+Computer: 25, You: 45
+Computer gained 6 points.
+Computer: 31, You: 45
+You rolled a 4. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 5. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 5. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 6. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 5. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 2. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 3. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 3. Would you like to roll again? (1 for yes, 0 for no)0
+You gained 33 points.
+Computer: 31, You: 78
+Computer gained 5 points.
+Computer: 36, You: 78
+You rolled a 2. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 3. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 2. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 4. Would you like to roll again? (1 for yes, 0 for no)1
+Oops, you rolled a 1. You gained 0 points.
+Computer: 36, You: 78
+Computer gained 7 points.
+Computer: 43, You: 78
+You rolled a 4. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 2. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 5. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 3. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 5. Would you like to roll again? (1 for yes, 0 for no)1
+You rolled a 4. Would you like to roll again? (1 for yes, 0 for no)0
+You gained 23 points.
+Computer: 43, You: 101
+You won:
