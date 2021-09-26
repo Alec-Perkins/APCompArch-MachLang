@@ -17,7 +17,7 @@ int main()
 	char choice;
 	char str[100];
 	printf("Input a line of text, up to 100 characters:\n");
-	fgets(str, sizeof(str), stdin);
+	scanf("%[^\n]", str);
 	puts("\nA)  Count the number of vowels in the string\nB)  Count the number of consonants in the string\nC)  Convert the string to uppercase\nD)  Convert the string to lowercase\nE)  Display the current string\nF)  Enter another string\n\nM)  Display this menu\nX)  Exit the program\n");
 	puts("Enter your menu selection:");
 	scanf("%s", &choice);
@@ -51,7 +51,7 @@ int main()
 				printf("Input a line of text, up to 100 characters:\n");
 				int c;
 				while ((c = getchar()) != '\n' && c != EOF) { }
-				fgets(str, sizeof(str), stdin);
+				scanf("%[^\n]", str);
 				break;
 			case 'M':
 			case 'm':
