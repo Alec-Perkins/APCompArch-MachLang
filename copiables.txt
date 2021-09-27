@@ -1,3 +1,4 @@
 cd /cygdrive/g/My\ Drive/Senior/AP\ Comp.\ Arch.\ \&\ Machine\ Lang/APCompArch-MachLang/Cprojects/ ; ls -lAF ; alias ll='ls -lAF' ; alias ..='cd ..' ; alias gaa='git add -A' ; alias gcam='git commit -m'
 ls -lAF
 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
+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
