@@ -1,0 +1,17 @@
+1) Write the prototype function named "display" that takes a 2D-array named str and doesn't return anything:
+answer: void display(char str[]);
+
+2) True or False: You can iterate through an array in a for loop without initializing the variable for the arrays indices as type "size_t"
+answer: true
+
+3) Fill in the blank: A variable that outside or other function can not access is called a _____ variable.
+answer: local
+
+4) Write a loop that iterates through a string array named str and prints every char in it without new lines:
+answer:
+for (size_t i=0; str[i] != '\0'; ++i) {
+	printf("%c", str[i]);
+}
+
+5) Fill in the blank: A set of integer constants represented by identifiers is called ____ or _________.
+answer: enum or enumeration
