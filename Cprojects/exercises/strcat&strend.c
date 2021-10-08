@@ -22,7 +22,7 @@ int main()
 	strcat(s, t);
 
 }
-	
+
 // void strcat(char s[], char t[])
 // {  
 // 	int i, j;  i = j = 0;
@@ -33,11 +33,13 @@ int main()
 
 void strcat(char s[], char t[])
 {  
-	int i, j;  i = j = 0;
-	while (s != '\0') /* find end of s */
-		i++;
-	while ((s[i++] = t[j++]) != '\0'); /* copy t */
-
+	char *sPtr;
+	sPtr = s;
+	char *tPtr;
+	tPtr = t;
+	while (*sPtr != '\0')
+		sPtr++;
+	while ((*sPtr++ = *tPtr++) != '\0');
 }
 	
 	// write strend here
