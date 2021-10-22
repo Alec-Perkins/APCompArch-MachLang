@@ -13,16 +13,19 @@ void display(int t, int h);
 
 int main()
 {
+	printf("BANG !!!!\nAND THEY’RE OFF !!!!!\n");
 	srand(time(NULL));
-	int h = 0;
-	int t = 0;
+	int h = 1;
+	int t = 1;
 	while (h < 70 && t < 70)
 	{
-		delay(1);
 		int tStep = (rand() % 10) + 1;
 		int hStep = (rand() % 10) + 1;
 		t += tort(tStep);
+		if (t<=0) { t = 1; }
 		h += hare(hStep);
+		if (h<=0) { h = 1; }
+		delay(1);
 		display(t, h);
 	}
 	return 0;
@@ -72,22 +75,26 @@ void display(int t, int h)
 	for (size_t i = 0; i < 70; i++){
 		str[i] = '-';
 	}
-	for (size_t j = 70; j < 80; j++)
+	for (size_t j = 70; j < 85; j++)
 	{
 		str[j] = ' ';
 	}
 	str[t] = 'T';
 	str[h] = 'H';
 	printf("%s\n", str);
-	if (t > 70 && h > 70)
+	if (t == h)
+	{
+		puts("OUCH!!!");
+	}
+	if (t >= 70 && h >= 70)
 	{
 		puts("It’s a tie.\n");
 	}
-	else if (t > 70)
+	else if (t >= 70)
 	{
 		puts("TORTOISE WINS!!! YAY!!!");
 	}
-	else if (h > 70)
+	else if (h >= 70)
 	{
 		puts("Hare wins. Yuch.");
 	}

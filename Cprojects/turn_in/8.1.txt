@@ -1,0 +1,23 @@
+// Exercise 8.1
+// A. Perkins
+
+a) c = toupper(c);
+b) printf("'%c'%digit\n", c, isdigit(c) ? " is a " : " is not a ");
+c) printf("'%c'%scontrol character\n", c, iscntrl(c) ? " is a " is not a ");
+d) fgets(s1, 100, stdin);
+e) puts(s1);
+f) ptr = strrchr(s1, c);
+g) putchar(c);
+h) printf("'%c'%sletter\n, c, isalpha(c) ? " is a " : " is not a ");
+i) c = getchar();
+j) ptr = strstr(s1, s2);
+k) printf("'%c'%sprinting character\n, c, isprint(c) ? " is a " : " is not a ");
+l) sscanf("1.27 10.3 9.432", "%f%f%f", &d, &e, &f);
+m) strcpy(s1, s2);
+n) ptr = strpbrk(s1, s2);
+o) printf("strcmp(s1, s2) = %d\n", strcmp(s1, s2));
+p) ptr = strchr(s1, c);
+q) sprintf(s1, "%7d%7d%7d", x, y, z);
+r) strncat(s1, s2, 10);
+s) printf("strlen(s1) = %u\n", strlen(s1));
+t)  ptr = strtok(s2, ",");
