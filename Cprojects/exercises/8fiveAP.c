@@ -8,8 +8,8 @@ void charHandling(char c);
 
 int main()
 {
-    printf("im thinking about it right now");
-    return 0;
+	printf("im thinking about it right now");
+	return 0;
 }
 
 void charHandling(char c)
