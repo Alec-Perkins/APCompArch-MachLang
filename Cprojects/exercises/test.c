@@ -1,7 +1,6 @@
 // Use for testing c
 
 #include <stdio.h>
-//Foo
 
 int main() {
 	int arr[4] = {1};
