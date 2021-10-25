@@ -9,6 +9,7 @@ void upperLower(char s[100]);
 
 int main()
 {
+<<<<<<< HEAD
     char c = 'a';
     int cInt = c;
     charHandling(cInt); 
@@ -20,6 +21,10 @@ int main()
     upperLower(s);
 
     return 0;
+=======
+	printf("im thinking about it right now");
+	return 0;
+>>>>>>> e05d0272ce374ab57fc08ccd835d47d0cbca8452
 }
 
 void charHandling(int c)
@@ -43,6 +48,7 @@ void charHandling(int c)
 
 void upperLower(char s[100])
 {
+<<<<<<< HEAD
     char* sTemp = s;
     while (*s != '\0')
     {
@@ -56,4 +62,7 @@ void upperLower(char s[100])
         printf("%c", tolower(*s));
         s++;
     }
+=======
+
+>>>>>>> e05d0272ce374ab57fc08ccd835d47d0cbca8452
 }
