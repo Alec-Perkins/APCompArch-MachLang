@@ -29,6 +29,15 @@ int main()
 	puts("Enter 4 numbers under 10 digits with a space between each number:");
 	scanf("%s %s %s %s", str1, str2, str3, str4);
 	strToInt(str1, str2, str3, str4);
+
+	printf("\n\n8.8:\n");
+	char str1[10];
+	char str2[10];
+	char str3[10];
+	char str4[10];
+	puts("Enter 4 doubles under 10 digits with a space between each number:");
+	scanf("%s %s %s %s", str1, str2, str3, str4);
+	strToFloat(str1, str2, str3, str4);
 	return 0;
 }
 
@@ -75,5 +84,14 @@ void strToInt(char str1[10], char str2[10], char str3[10], char str4[10])
 	int int3 = atoi(str3);
 	int int4 = atoi(str4);
 	printf("Sum: %d", int1 + int2 + int3 + int4);
+}
+
+void strToFloat(char str1[10], char str2[10], char str3[10], char str4[10])
+{
+	double doub1 = strtod(str1);
+	double doub2 = strtod(str2);
+	double doub3 = strtod(str3);
+	double doub4 = strtod(str4);
+	printf("Sum: %f", doub1 + doub2 + doub3 + doub4);
 }
 
