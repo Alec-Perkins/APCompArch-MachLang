@@ -8,6 +8,7 @@
 void charHandling(int c);
 void upperLower(char s[100]);
 void strToInt(char str1[10], char str2[10], char str3[10], char str4[10]);
+void strToFloat(char str1[10], char* str1Ptr, char str2[10], char* str2Ptr, char str3[10], char* str3Ptr, char str4[10], char* str4Ptr);
 
 int main()
 {
@@ -31,13 +32,17 @@ int main()
 	strToInt(str1, str2, str3, str4);
 
 	printf("\n\n8.8:\n");
-	char str1[10];
-	char str2[10];
-	char str3[10];
-	char str4[10];
+	char dstr1[10];
+	char dstr2[10];
+	char dstr3[10];
+	char dstr4[10];
 	puts("Enter 4 doubles under 10 digits with a space between each number:");
-	scanf("%s %s %s %s", str1, str2, str3, str4);
-	strToFloat(str1, str2, str3, str4);
+	scanf("%s %s %s %s", dstr1, dstr2, dstr3, dstr4);
+	char *dstr1Ptr;
+	char *dstr2Ptr;
+	char *dstr3Ptr;
+	char *dstr4Ptr;
+	strToFloat(dstr1, dstr1Ptr, dstr2, dstr2Ptr, dstr3, dstr3Ptr, dstr4, dstr4Ptr);
 	return 0;
 }
 
@@ -86,12 +91,11 @@ void strToInt(char str1[10], char str2[10], char str3[10], char str4[10])
 	printf("Sum: %d", int1 + int2 + int3 + int4);
 }
 
-void strToFloat(char str1[10], char str2[10], char str3[10], char str4[10])
+void strToFloat(char str1[10], char* str1Ptr, char str2[10], char* str2Ptr, char str3[10], char* str3Ptr, char str4[10], char* str4Ptr)
 {
-	double doub1 = strtod(str1);
-	double doub2 = strtod(str2);
-	double doub3 = strtod(str3);
-	double doub4 = strtod(str4);
+	double doub1 = strtod(str1, &str1Ptr);
+	double doub2 = strtod(str2, &str2Ptr);
+	double doub3 = strtod(str3, &str3Ptr);
+	double doub4 = strtod(str4, &str4Ptr);
 	printf("Sum: %f", doub1 + doub2 + doub3 + doub4);
 }
-

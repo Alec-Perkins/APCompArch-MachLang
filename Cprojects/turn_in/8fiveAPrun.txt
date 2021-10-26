@@ -1,0 +1,31 @@
+8.5:
+0
+0
+1024
+8
+4096
+512
+0
+a
+A
+0
+0
+0
+16384
+32768
+
+8.6:
+Enter a string less that or equal to 100 characters:
+WIll This WoRk
+WILL THIS WORK
+will this work
+
+8.7:
+Enter 4 numbers under 10 digits with a space between each number:
+10 20 30 400
+Sum: 460
+
+8.8:
+Enter 4 doubles under 10 digits with a space between each number:
+2.2 1.0 45.5 0.1
+Sum: 48.800000
