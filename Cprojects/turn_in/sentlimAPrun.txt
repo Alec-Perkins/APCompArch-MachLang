@@ -1,0 +1,14 @@
+sentAP.c:
+
+run1: The dog skipped on a car.
+run2: Any car jumped on the town.
+run3: Some boy ran from a girl.
+
+
+limAP.c:
+
+A dog drove over any crown.
+One dog ran on any town.
+Some car skipped under a musket.
+The girl walked to a bucket.
+And any car drove to a frown.
