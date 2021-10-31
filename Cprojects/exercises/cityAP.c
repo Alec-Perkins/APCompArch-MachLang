@@ -9,7 +9,9 @@
 
 int main()
 {
-    
-    
-    return 0;
+	char towns[] = {"Hanamura", "Black Forest", "Blizzard World", "Temple of Anubis", "Hollywood", "Route 66", "Havana", "Volskaya", "Rialto", "Ilios", "Numbani", "Lijiang", "Dorado", "Eichanwalde", "Kings Row", "Junker Town", "Oasis", "Nepal", "Gibraltar", "Busan"}
+
+
+
+	return 0;
 }
