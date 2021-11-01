@@ -17,12 +17,15 @@ int main()
 
 	char holder[20];
 
-	for( int i = 0 ; i < STRINGNUM ; i++ ) {
-		for( int j = i+1 ; j < STRINGNUM ; j++ ) {
-			if(strcmp(towns[i],towns[j])>0){
-				strcpy(holder,towns[i]);
-				strcpy(towns[i],towns[j]);
-				strcpy(towns[j],holder);
+	for( int townName = 0 ; townName < STRINGNUM ; townName++ )
+	{
+		for( int letter = townName+1 ; letter < STRINGNUM ; letter++ )
+		{
+			if(strcmp(towns[townName],towns[letter])>0)
+			{
+				strcpy(holder,towns[townName]);
+				strcpy(towns[townName],towns[letter]);
+				strcpy(towns[letter],holder);
 			}
 		}
 	}
@@ -35,7 +38,7 @@ int main()
 void display(char towns[STRINGNUM][STRINGNUM])
 {
 	puts("");
-	for( int i = 0 ; i < STRINGNUM ; i++ ) {
-		puts(towns[i]);
+	for( int townName = 0 ; townName < STRINGNUM ; townName++ ) {
+		puts(towns[townName]);
 	}
 }
