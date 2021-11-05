@@ -29,7 +29,7 @@ int main()
 						"#...#......#",
 						"..#.#.####.#",
 						"###.#....#.#",
-						"#....###.#..",
+						"#....###.#.#",
 						"##.#.#.#.#.#",
 						"#........#.#",
 						"######.###.#",
@@ -48,7 +48,14 @@ int main()
 
 	// Create a while loop to repeat progression until the maze is finished or the user is done
 	int step = 1;
-	while (currentCol != 11)
+
+	if (getchar() == '\n') {
+		printf("Step %d\n", step);
+		step++;
+		progress(maze, &currentRow, &currentCol, currentRow, currentCol);
+	}
+
+	while (currentCol != 11 && currentCol != 0)
 	{
 		if (getchar() == '\n') {
 			printf("Step %d\n", step);
@@ -57,8 +64,16 @@ int main()
 		}
 	}
 	printf("Step %d\n", step);
+	printf("Step %d\n", step); // FIZ THIS
 	progress(maze, &currentRow, &currentCol, currentRow, currentCol);
-	puts("You escaped the maze!");
+	if (currentCol == 11)
+	{
+		puts("You escaped the maze!");
+	}
+	else if (currentCol == 0)
+	{
+		puts("The maze is unsolvable.");
+	}
 
 
 	return 0;
@@ -73,12 +88,30 @@ void progress(char maze[MAZELENGTH][MAZELENGTH], int *pointerRow, int *pointerCo
 		{
 			// Turn left
 			dir--;
-			if (dir == -1 || dir == 4) {dir = 0;}
+
+			// Correct direction out of bounds
+			if (dir == -1)
+			{
+				dir = 3;
+			} else if (dir == 4) 
+			{
+				dir = 0;
+			}
+
 			if (isWallForward(maze, currentRow, currentCol))
 			{
 				// Turn left again to get out of dead end
 				dir--;
-				if (dir == -1 || dir == 4) {dir = 0;}
+
+				// Correct direction out of bounds
+				if (dir == -1)
+				{
+					dir = 3;
+				} else if (dir == 4) 
+				{
+					dir = 0;
+				}
+
 				moveForward(maze, pointerRow, pointerCol, currentRow, currentCol);
 			}
 			else
