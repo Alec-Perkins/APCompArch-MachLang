@@ -12,6 +12,8 @@ enum directions{up, right, down, left};
 // Prototype functions:
 int findStart(char maze[12][12]);
 
+char direction[] = "Right";
+
 int main()
 {
 	// Create the maze to be tested
@@ -33,7 +35,7 @@ int main()
 	// Initializes the starting row and column of the x
 	int startX = 0;
 	int startY = findStart(maze);
-	
+
 	//printf("x: %d, y: %d", startX, startY);
 
 
