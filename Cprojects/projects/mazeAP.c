@@ -29,7 +29,7 @@ int main()
 						"#...#......#",
 						"..#.#.####.#",
 						"###.#....#.#",
-						"#....###.#.#",
+						"#....###.#..",
 						"##.#.#.#.#.#",
 						"#........#.#",
 						"######.###.#",
@@ -63,18 +63,18 @@ int main()
 			progress(maze, &currentRow, &currentCol, currentRow, currentCol);
 		}
 	}
-	printf("Step %d\n", step);
-	printf("Step %d\n", step); // FIZ THIS
-	progress(maze, &currentRow, &currentCol, currentRow, currentCol);
+
+	// Print if the maze is escaped or unsolvable.
 	if (currentCol == 11)
 	{
+		printf("Step %d\n", step);
+		progress(maze, &currentRow, &currentCol, currentRow, currentCol);
 		puts("You escaped the maze!");
 	}
 	else if (currentCol == 0)
 	{
 		puts("The maze is unsolvable.");
 	}
-
 
 	return 0;
 }
