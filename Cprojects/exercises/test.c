@@ -7,6 +7,8 @@ void change(char test[2][2]);
 int main() {
 	char test[2][2] = {"al", "ry"};
 
+	puts("Does this work without wifi?");
+
 	change(test);
 	for (int i = 0; i < 2; i++)
 	{
