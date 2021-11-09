@@ -20,6 +20,7 @@ void man(char line[LENGTH]);
 void woman(char line[LENGTH]);
 void businesswoman(char line[LENGTH]);
 void businessman(char line[LENGTH]);
+void girl(char line[LENGTH]);
 
 
 
@@ -44,6 +45,7 @@ void replace(char line[LENGTH])
 	woman(line);
 	businesswoman(line);
 	businessman(line);
+	girl(line);
 }
 
 void daughter(char line[LENGTH])
@@ -193,9 +195,8 @@ void businesswoman(char line[LENGTH])
 			char test[] = "businesswoman";
 			char replace[] = "businessperson";
 			int len = strlen(test);
-			char word[14];
+			char word[50];
 			strncpy(word, line + index + 1, len);
-			printf("%s\n", word);
 			if (strcmp(word, test) == 0)
 			{
 				char temp[strlen(line)+len];
@@ -215,9 +216,33 @@ void businessman(char line[LENGTH])
 		if (line[index] == ' ')
 		{
 			char test[] = "businessman";
-			char replace[] = "businessperson";
+			char replace[] = " businessperson";
 			int len = strlen(test);
-			char word[12];
+			char word[50];
+			strncpy(word, line + index + 1, len);
+			if (strcmp(word, test) == 0)
+			{
+				char temp[strlen(line)+len];
+				strncpy(temp, line, index+1);
+				strncpy(temp + index, replace, strlen(replace)+1);
+				strncpy(temp + index + strlen(replace), line + index + len + 1, strlen(line) - index - strlen(replace) + 1);
+				strncpy(line, temp, strlen(temp));
+			}
+		}
+	}
+}
+
+void girl(char line[LENGTH])
+{
+	for (int index=0; index<LENGTH; index++)
+	{
+		if (line[index] == ' ')
+		{
+			char test[] = "girl";
+			char replace[] = " person";
+			int len = strlen(test);
+			char word[100];
+			// printf("%s\n", word);
 			strncpy(word, line + index + 1, len);
 			if (strcmp(word, test) == 0)
 			{
