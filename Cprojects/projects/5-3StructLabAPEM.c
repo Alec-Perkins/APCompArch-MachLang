@@ -14,6 +14,8 @@ struct pet {
 	double weight;
 };
 
+typedef struct pet
+
 int main()
 {
 
