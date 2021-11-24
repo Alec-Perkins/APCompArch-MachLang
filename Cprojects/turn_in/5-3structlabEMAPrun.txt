@@ -1,0 +1,56 @@
+
+Owner's first pet!
+Ethan has 1 pets now.
+Ethan has 2 pets now.
+
+Ethan's first pet, Yoshi, weighs 5.600000 pounds.
+
+Name: Ethan
+City: Belmont
+Age: 17
+Number of pets: 2
+Pet #1: Yoshi
+Pet #2: Paco
+
+Name: Yoshi
+Species: bunny
+Color: white and gray
+Weight: 5.600000
+Living (0 = no, 1 = yes): 1
+Age: 7
+
+Input a new owner's first name
+nate
+Input the owner's home city
+belmont
+Input the owner's age
+17
+
+Input a new pet's first name
+mendy
+Input the pet's species
+dog
+Input the pet's color
+black
+Input the pet's weight
+35
+Input if the pet is living or not (0 = not, 1 = living)
+0
+Input the pet's age
+15
+
+Owner's first pet!
+nate has 1 pets now.
+
+Name: nate
+City: belmont
+Age: 17
+Number of pets: 1
+Pet #1: mendy
+
+Name: mendy
+Species: dog
+Color: black
+Weight: 35.000000
+Living (0 = no, 1 = yes): 0
+Age: 15
