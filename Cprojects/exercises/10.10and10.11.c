@@ -1,4 +1,4 @@
-// Exercise 10.10 
+// Exercise 10.10 and 10.11
 // A. Perkins
 
 #include <stdio.h>
@@ -15,6 +15,9 @@ int main()
     printf("Enter an integer: ");
     scanf("%u", &n);
     unsigned int newN = n>>4;
+    printf("The old integer in binary: ");
+    bin(n);
+    printf("\nThe new integer in binary: ");
     bin(newN);
 }
 
